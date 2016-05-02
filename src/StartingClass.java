@@ -107,7 +107,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 		g.drawImage(background, bg2.getBgX(), bg2.getBgY(), this);
 		g.drawImage(currentSprite,robot.getCenterX()-61, robot.getCenterY()-63, this);
 	}
-	
 
 	@Override
 	public void keyPressed(KeyEvent e) {
@@ -139,7 +138,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 			break;
 			
 		}
-		
 	}
 
 	@Override
@@ -166,7 +164,6 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 			break;
 			
 		}
-		
 	}
 
 	@Override
@@ -181,7 +178,5 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 	public static Background getBg2(){
 		return bg2;
 	}
-	
-	
 
 }
