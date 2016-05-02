@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Robot {
 
@@ -18,9 +19,11 @@ public class Robot {
 	private boolean movingLeft = false;
 	private boolean movingRight = false;
 	private boolean ducked = false;
-
 	private static Background bg1 = StartingClass.getBg1();
 	private static Background bg2 = StartingClass.getBg2();
+	/* Declare an ArrayList for bullets*/
+	private ArrayList<Projectile> projectiles = new ArrayList<Projectile>();
+	
 
 	public void update() {
 		// Moves character or scrolls background accordingly
@@ -107,6 +110,17 @@ public class Robot {
 			speedY = JUMPSPEED;
 			jumped = true;
 		}
+	}
+	
+	public void shoot(){
+		Projectile p = new Projectile(centerX + 50, centerY -25);
+		projectiles.add(p);
+	}
+	
+	// Getters and setters
+	
+	public ArrayList getProjectiles(){
+		return projectiles;
 	}
 
 	public int getCenterX() {
