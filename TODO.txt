@@ -1,0 +1,2 @@
+-Change characters into other sprites. Adjust position, shooting and movement accordingly.
+-Make double jump.
